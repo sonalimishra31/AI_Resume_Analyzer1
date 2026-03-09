@@ -9,21 +9,73 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 h2 {
     color: #2c3e50;
+    font-weight: 600;
 }
 
 .list-group-item {
     border-left: none;
     border-right: none;
+    padding: 0.75rem 1.25rem;
+}
+
+.list-group-item a {
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+    color: #005582;
 }
 
 .btn-primary {
-    background-color: #0077b5; /* LinkedIn blue */
+    background-color: #0077b5;
     border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s;
 }
+
 .btn-primary:hover {
     background-color: #005f8d;
+}
+
+/* Profile photo styling */
+.rounded-circle {
+    border: 4px solid #0077b5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    max-width: 150px;
+}
+
+/* LinkedIn icon styling */
+.social-links a {
+    color: #0077b5;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #005582;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .rounded-circle {
+        max-width: 120px;
+        margin-bottom: 15px;
+    }
+    h1.display-4 {
+        font-size: 2rem;
+    }
 }
