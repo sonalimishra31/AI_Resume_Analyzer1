@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <!-- Header with name and contact -->
+    <div class="text-center mb-4">
+        <h1 class="display-4">Sonali Mishra</h1>
+        <p class="lead">
+            <i class="fas fa-map-marker-alt"></i> 1-604, Smondo 3 Apartment, Electronic City Phase 1, Bangalore |
+            <i class="fas fa-phone"></i> +91 7978062005 |
+            <i class="fas fa-envelope"></i> sonalimishra3399@gmail.com
+        </p>
+        <!-- Download PDF button -->
+        <a href="{{ url_for('static', filename='pdf/updated sonali mishra new cv (1).pdf') }}" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download Resume (PDF)
+        </a>
+    </div>
+
+    <!-- Profile Summary -->
+    <section class="mb-5">
+        <h2 class="h3 border-bottom pb-2">Profile Summary</h2>
+        <p>Motivated and detail-oriented professional with strong expertise in Artificial Intelligence, IoT, and Cybersecurity. Experienced in developing and evaluating AI-based models for cyber threat detection and network protection. Published multiple papers in reputed journals and conferences, including a Best Paper Award. Passionate about applying research-driven problem-solving and analytical skills to deliver secure and innovative technology solutions.</p>
+    </section>
+
+    <!-- Technical Skills (grid of badges) -->
+    <section class="mb-5">
+        <h2 class="h3 border-bottom pb-2">Technical Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <strong>Programming:</strong> Python, MATLAB, HDL<br>
+                <strong>AI/ML Tools:</strong> TensorFlow, Keras, PyTorch, Scikit-learn, NumPy, Pandas, Matplotlib, Seaborn, Google Colab, Jupyter, Databricks<br>
+                <strong>Office Automation:</strong> MS PowerPoint, Word, Excel<br>
+                <strong>IoT:</strong> Security, Layers, Architecture, Protocols, Raspberry Pi, Arduino
+            </div>
+            <div class="col-md-6">
+                <strong>Cyber Security:</strong> Penetration Testing, Vulnerability Assessment, Threat Detection, Kali Linux, Wireshark<br>
+                <strong>Information Security:</strong> Cryptography, Watermarking, AES, DES, RSA, MATLAB<br>
+                <strong>Data Visualization:</strong> Tableau<br>
+                <strong>Operating Systems:</strong> Windows, Linux
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications (list from your PDF) -->
+    <section class="mb-5">
+        <h2 class="h3 border-bottom pb-2">Publications</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. Sonali Mishra and Ananya Dastidar, "Hybrid image encryption and decryption using cryptography and watermarking ...", IEEE ICCTCT, 2018.</li>
+            <li class="list-group-item">2. Sonali Mishra, Ananya Dastidar, Ipseeta Nanda, "Password protected hybrid image encryption ...", STM Journal, Vol.9, 2019.</li>
+            <li class="list-group-item">3. Sonali Mishra, Ananya Dastidar, Umesh Chandra Samal, Sushant Kumar Mohapatra, "Review of different image data hiding techniques", IJAST, Vol.121, 2018.</li>
+            <li class="list-group-item">4. Ananya Dastidar and Sonali Mishra, "Encryption and decryption algorithms for IoT device communication", CRC Press book chapter, 2022.</li>
+            <li class="list-group-item">5. Sonali Mishra, Anusha K S, Bhuvana G R, et al., "Review of Smart ATM Machine", IJARESM, Vol.13, 2025.</li>
+            <li class="list-group-item">6. Vivek Gowda G, Kavana Sortur, Sandeep V, Manoj M, and Sonali Mishra, "Asset Monitoring System for Educational Labs", AIJFR, Vol.6, 2025.</li>
+            <li class="list-group-item">7. Mrs. Sonali Mishra, Dr. Meena Deshpande, et al., "X-Ray Based Bone Fracture Detection ...", IJCRT, Vol.13, 2025.</li>
+        </ul>
+    </section>
+
+    <!-- Projects (from your PDF) -->
+    <section class="mb-5">
+        <h2 class="h3 border-bottom pb-2">Projects</h2>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">AI-Based Resume Analyzer (TalentIQ)</h5>
+                <p class="card-text">Python, NLP, Streamlit – Resume parsing, skill matching, missing skills identification, and interactive web interface.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Hybrid AI Cyber Attack Detection (N-BaIoT)</h5>
+                <p class="card-text">Python, Scikit-learn, Deep Learning – Ensemble detection framework for IoT botnet attacks with high accuracy and statistical validation.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Intelligent Cyber Threat Detection (Gowtham Dataset)</h5>
+                <p class="card-text">Python, Machine Learning – Multi‑class attack classification, hyperparameter optimisation, visual dashboards.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Comparative Hybrid AI Security Framework for IoT</h5>
+                <p class="card-text">Python, Ensemble AI – Cross‑dataset evaluation, statistical testing, radar charts, ROC analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="mb-5">
+        <h2 class="h3 border-bottom pb-2">Work Experience</h2>
+        <div class="mb-3">
+            <h5>Assistant Professor <span class="text-muted">| AMC Engineering College, Bangalore (Dec 2023 – Present)</span></h5>
+            <ul>
+                <li>Teaching Python, Digital Design, HDL, MATLAB</li>
+                <li>Guided mini & major projects (Smart Library, Smart ATM using Retina)</li>
+                <li>Developed AI‑based Resume Analyzer with NLP & Streamlit</li>
+            </ul>
+        </div>
+        <div>
+            <h5>Research Associate <span class="text-muted">| EC‑Council, Hyderabad (Nov 2022 – Feb 2023)</span></h5>
+            <ul>
+                <li>Technical paper writing, academic research, question & SoP formation</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="mb-5">
+        <h2 class="h3 border-bottom pb-2">Education</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr><th>Degree</th><th>Institute</th><th>CGPA/%</th><th>Year</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>PhD (ECE) – Part Time</td><td>Reva University, Bangalore</td><td>Pursuing</td><td>2021 – present</td></tr>
+                <tr><td>M.Tech (ECE)</td><td>College of Engineering & Technology, BPUT</td><td>7.9/10</td><td>2018</td></tr>
+                <tr><td>B.Tech (E&I)</td><td>ITER, Bhubaneswar</td><td>7.6/10</td><td>2016</td></tr>
+                <tr><td>XII (Odisha Board)</td><td>Royal College of Science & Technology</td><td>56.33%</td><td>2012</td></tr>
+                <tr><td>X (Odisha Board)</td><td>Secondary Board High School</td><td>73.33%</td><td>2010</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Certifications & Awards (excerpt) -->
+    <section class="mb-5">
+        <h2 class="h3 border-bottom pb-2">Certifications & Awards</h2>
+        <ul>
+            <li>Best Paper Award – VSPICE 2020 (STM Journals)</li>
+            <li>Certificate of Appreciation – ICCTCT 2018 (IEEE)</li>
+            <li>IoT Certification – CTTC, Bhubaneswar</li>
+            <li>AI/ML for Computer Vision – MeitY 2022</li>
+            <li>Cybersecurity – Simplilearn</li>
+            <li>Databricks Accredited Generative AI Fundamentals – 2025</li>
+            <li>Google badges on Generative AI & Responsible AI – 2025</li>
+            <li>AI For All (Intel, Digital India) – Appreciate & Aware stages</li>
+            <li>FDP on Edge Computing using Jetson Orin Nano – 2025</li>
+        </ul>
+    </section>
+
+    <!-- Google Sites links -->
+    <section class="mb-5">
+        <h2 class="h3 border-bottom pb-2">My Google Sites</h2>
+        <ul>
+            <li><a href="https://sites.google.com/view/pythonprogramming2ndsem/home" target="_blank">Python Programming (2nd Sem)</a></li>
+            <li><a href="https://sites.google.com/view/ddco-bcs302-ise/home" target="_blank">DDCO (BCS302)</a></li>
+            <li><a href="https://sites.google.com/view/pythonprogramming21ec643/home" target="_blank">Python Programming (21EC643)</a></li>
+            <li><a href="https://sites.google.com/view/resume-interview/home" target="_blank">Resume & Interview</a></li>
+        </ul>
+    </section>
+
+    <!-- Declaration -->
+    <footer class="text-muted mt-5">
+        <p>I hereby declare that all above‑mentioned information is true and correct to the best of my knowledge.</p>
+    </footer>
+</div>
+{% endblock %}
